@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ubisoft — Games, News & Community</title>
+  <meta name="description" content="Ubisoft news, games, support, Ubisoft Connect tips, and videos. Discover Assassin's Creed, Far Cry, Rainbow Six, and more." />
+  <meta name="keywords" content="Ubisoft, Ubisoft games, Ubisoft support, Ubisoft Connect, Assassin's Creed, Far Cry, Rainbow Six, Ubisoft news, Ubisoft store, Ubisoft careers, Ubisoft videos" />
+
+  <!-- Inline CSS -->
+  <style>
+    :root{
+      --accent:#ff4500;
+      --bg:#0f1724;
+      --card:#0b1320;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071021 0%, #071829 100%);color:#e6eef8;line-height:1.45}
+    .container{max-width:1100px;margin:36px auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#0ea5a3,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px}
+    h1{font-size:28px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 4px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
+
+    .cta{display:flex;gap:10px;align-items:center;margin-top:14px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#cfe6ff}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .feature{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.012),transparent);}
+    .feature h3{margin:6px 0;font-size:16px}
+    .muted{color:var(--muted);font-size:14px}
+
+    .games-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .game{height:120px;border-radius:10px;overflow:hidden;position:relative;background-size:cover;background-position:center}
+    .game::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.6))}
+    .game .title{position:absolute;left:12px;bottom:12px;font-weight:700}
+
+    aside.right{position:relative}
+    .video-wrap{border-radius:10px;overflow:hidden;background:var(--glass);padding:6px}
+    iframe{width:100%;height:200px;border:0}
+
+    footer{margin:28px 0 60px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;margin-top:12px}
+      .games-grid,.features{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      .games-grid,.features{grid-template-columns:1fr}
+      .logo{width:44px;height:44px;font-size:18px}
+      h1{font-size:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">U</div>
+        <div>
+          <h1>Ubisoft — Games, News & Community</h1>
+          <p class="lead">Latest updates, top franchises, Ubisoft Connect tips, and curated videos for fans.</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="https://www.ubisoft.com/" target="_blank" rel="noopener">Official Ubisoft</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <main class="card">
+        <h2 style="margin-top:0">Explore Ubisoft games & guides</h2>
+        <p class="muted">Search intent keywords included on this landing page: <strong>Ubisoft games</strong>, <strong>Ubisoft support</strong>, <strong>Assassin's Creed</strong>, <strong>Far Cry</strong>, <strong>Rainbow Six</strong>, <strong>Ubisoft Connect</strong>, <strong>Ubisoft store</strong>, <strong>Ubisoft careers</strong>, <strong>Ubisoft videos</strong>.</p>
+
+        <div class="features" aria-hidden="false">
+          <div class="feature">
+            <h3>Franchises & Releases</h3>
+            <p class="muted">News and release dates for Assassin's Creed, Far Cry, Rainbow Six, Watch Dogs, and more.</p>
+          </div>
+          <div class="feature">
+            <h3>Ubisoft Connect Tips</h3>
+            <p class="muted">How to link accounts, claim rewards, and optimize your Ubisoft Connect experience.</p>
+          </div>
+          <div class="feature">
+            <h3>Support & Store</h3>
+            <p class="muted">Find support resources, refunds, and Ubisoft store purchase guidance.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:18px">Top games</h3>
+        <div class="games-grid">
+          <div class="game" style="background-image:url('https://via.placeholder.com/600x400?text=Assassin%27s+Creed')">
+            <div class="title">Assassin's Creed</div>
+          </div>
+          <div class="game" style="background-image:url('https://via.placeholder.com/600x400?text=Far+Cry')">
+            <div class="title">Far Cry</div>
+          </div>
+          <div class="game" style="background-image:url('https://via.placeholder.com/600x400?text=Rainbow+Six')">
+            <div class="title">Rainbow Six</div>
+          </div>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="https://www.ubisoft.com/en-us/" target="_blank" rel="noopener">Visit Ubisoft Official</a>
+          <a class="btn secondary" href="https://www.youtube.com/@Ubisoft" target="_blank" rel="noopener">Watch Ubisoft Videos</a>
+        </div>
+
+        <p class="muted" style="margin-top:16px">This page is a fan/affiliate informational landing page and is <strong>not</strong> affiliated with or endorsed by Ubisoft unless explicitly stated otherwise.</p>
+      </main>
+
+      <aside class="right">
+        <div class="card video-wrap">
+          <h4 style="margin:0 0 10px 0">Official Ubisoft YouTube Channel</h4>
+          <!-- Embedded channel link: uses an iframe to show the channel's featured video (YouTube requires an embed URL). -->
+          <!-- If embedding a channel playlist or video is desired, replace the src with a specific embed URL. -->
+          <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=Ubisoft" title="Ubisoft channel preview" allowfullscreen></iframe>
+          <div style="display:flex;gap:8px;margin-top:10px">
+            <a class="btn" href="https://www.youtube.com/@Ubisoft" target="_blank" rel="noopener">Open Channel</a>
+            <a class="btn secondary" href="https://www.youtube.com/@Ubisoft?sub_confirmation=1" target="_blank" rel="noopener">Subscribe</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4 style="margin:0 0 8px 0">Quick Links</h4>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li><a href="https://support.ubisoft.com/" target="_blank" rel="noopener">Ubisoft Support</a></li>
+            <li><a href="https://store.ubi.com/" target="_blank" rel="noopener">Ubisoft Store</a></li>
+            <li><a href="https://careers.ubisoft.com/" target="_blank" rel="noopener">Ubisoft Careers</a></li>
+          </ul>
+        </div>
+
+      </aside>
+    </section>
+
+    <footer>
+      <small>© Landing page — not affiliated with Ubisoft. Designed for search intent targeting: "Ubisoft games", "Ubisoft support", "Ubisoft Connect", "Ubisoft videos".</small>
+    </footer>
+
+  </div>
+</body>
+</html>

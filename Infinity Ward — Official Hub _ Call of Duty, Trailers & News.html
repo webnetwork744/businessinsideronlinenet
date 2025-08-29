@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Infinity Ward — Official Hub | Call of Duty, Trailers & News</title>
+  <meta name="description" content="Official Infinity Ward hub: news, game releases, trailers, studio updates, careers, and YouTube videos. Follow Infinity Ward on YouTube for the latest Call of Duty content.">
+  <meta name="keywords" content="Infinity Ward, Infinity Ward games, Call of Duty Infinity Ward, Infinity Ward YouTube, Infinity Ward trailers, Infinity Ward news, Infinity Ward studio, Infinity Ward careers, Infinity Ward gameplay, Call of Duty news">
+
+  <!-- Inline CSS for quick landing page / single-file deployment -->
+  <style>
+    :root{--bg:#0b0f14;--card:#0f1720;--accent:#00aaff;--muted:#9aa6b2;--glass:rgba(255,255,255,0.03)}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#e6eef6;background:linear-gradient(180deg,#02050a 0%, #071020 60%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:40px auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:54px;height:54px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7b61ff);display:flex;align-items:center;justify-content:center;color:#051421;font-weight:700;font-size:20px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:22px;margin-top:26px}
+    .card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,10,0.6);border:1px solid rgba(255,255,255,0.02)}
+
+    .cta{display:flex;flex-direction:column;gap:12px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#7b61ff);color:#041227}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#dfe9f2}
+
+    .features{display:flex;gap:12px;margin-top:18px}
+    .feature{flex:1;padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.02)}
+    .feature h3{margin:0 0 8px;font-size:16px}
+    .muted{color:var(--muted);font-size:14px}
+
+    .video-embed{width:100%;height:220px;border-radius:10px;border:0}
+
+    .seo-keywords{margin-top:18px;padding:12px;border-radius:8px;background:var(--glass);font-size:13px;color:var(--muted)}
+
+    footer{margin-top:30px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .video-embed{height:260px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">IW</div>
+        <div>
+          <h1>Infinity Ward</h1>
+          <p class="lead">Official landing page — Call of Duty news, trailers, studio updates & careers</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn btn-ghost" href="#videos">YouTube Channel</a>
+        <a class="btn btn-ghost" href="#news">News</a>
+        <a class="btn btn-ghost" href="#careers">Careers</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h2>Latest from Infinity Ward</h2>
+          <p class="muted">Your guide to Infinity Ward games, updates, trailers and community events. Use the links below to explore official videos, job openings, support, and the latest Call of Duty announcements.</p>
+
+          <div class="features" style="margin-top:16px">
+            <div class="feature">
+              <h3>Official Trailers & Gameplay</h3>
+              <p class="muted">Watch cinematic trailers, gameplay reveals, and developer updates from Infinity Ward's official YouTube channel.</p>
+            </div>
+            <div class="feature">
+              <h3>News & Updates</h3>
+              <p class="muted">Get studio announcements, patch notes, and event schedules focused on Call of Duty titles developed by Infinity Ward.</p>
+            </div>
+            <div class="feature">
+              <h3>Careers</h3>
+              <p class="muted">Hiring engineers, artists, designers and QA — find current openings and apply to join Infinity Ward's team.</p>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-top:18px">
+            <a class="btn btn-primary" href="https://www.youtube.com/@InfinityWard" target="_blank" rel="noopener">Open YouTube Channel</a>
+            <a class="btn btn-ghost" href="#subscribe">Subscribe & Follow</a>
+          </div>
+
+          <div class="seo-keywords">
+            Top search intents included on this page: <strong>"Infinity Ward YouTube", "Call of Duty Infinity Ward trailers", "Infinity Ward careers", "Infinity Ward news", "Infinity Ward gameplay"</strong> — optimized for organic search and landing page discoverability.
+          </div>
+        </div>
+
+        <div id="news" class="card" style="margin-top:14px">
+          <h3>Studio Highlights</h3>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Official game trailers & sneak peeks</li>
+            <li>Patch notes and community updates</li>
+            <li>Esports and live events</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <aside class="card">
+        <h3 id="videos">Featured Videos</h3>
+        <!-- Embedded YouTube channel: uses the provided channel link. If your host blocks cross-origin framing, this will fall back to a clickable link. -->
+        <div style="margin-top:12px;border-radius:10px;overflow:hidden;background:#000">
+          <iframe class="video-embed" src="https://www.youtube.com/embed?listType=user_uploads&list=@InfinityWard" title="Infinity Ward YouTube uploads" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div style="margin-top:14px">
+          <a class="btn btn-primary" href="https://www.youtube.com/@InfinityWard" target="_blank" rel="noopener">Visit Infinity Ward on YouTube</a>
+        </div>
+
+        <div id="subscribe" style="margin-top:12px;color:var(--muted);font-size:13px">
+          <p style="margin:6px 0">Want to show support? Click the channel link above and press <strong>Subscribe</strong> on YouTube.</p>
+        </div>
+
+      </aside>
+
+    </section>
+
+    <section class="card" style="margin-top:20px">
+      <h3>SEO & On-page Content</h3>
+      <p class="muted">This landing page includes common Google search intents and keywords users search for when looking for Infinity Ward content. Use structured data (JSON-LD) and up-to-date content snippets to improve indexing. Below are example targeted keywords added to meta tags and page copy to help surface this page for organic queries.</p>
+
+      <div style="margin-top:12px">
+        <strong>Example long-tail search phrases included on this page:</strong>
+        <ul style="color:var(--muted);margin:8px 0 0 18px">
+          <li>"Infinity Ward YouTube channel latest trailers"</li>
+          <li>"Call of Duty Infinity Ward news and updates"</li>
+          <li>"Infinity Ward careers software engineer"</li>
+          <li>"Infinity Ward gameplay trailer 4k"</li>
+          <li>"How to follow Infinity Ward on YouTube"</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div>© Infinity Ward — Landing page template. Not an official Activision/Infinity Ward property unless you publish it as such.</div>
+      <div style="margin-top:6px">Made for SEO intent: "Infinity Ward", "Call of Duty Infinity Ward", "Infinity Ward YouTube"</div>
+    </footer>
+  </div>
+</body>
+</html>
+

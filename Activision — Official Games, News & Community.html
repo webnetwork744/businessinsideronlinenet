@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Activision — Official Games, News & Community</title>
+  <meta name="description" content="Discover Activision games, latest updates, esports events, support, and how to buy Activision titles. Subscribe to the official Activision YouTube channel for trailers and gameplay.">
+  <meta name="keywords" content="Activision, Activision games, Call of Duty, Diablo, Modern Warfare, Activision news, buy Activision games, Activision esports, Activision careers, Activision support">
+  <meta name="author" content="Activision">
+  <style>
+    /* Inline CSS — single-file landing page */
+    :root{--accent:#ff3b3f;--dark:#0b0d10;--muted:#9aa4b2;--card:#0f1720}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#05060a 0%, #0a0c10 100%);color:#e6eef6}
+    a{color:var(--accent);text-decoration:none}
+
+    .container{max-width:1100px;margin:40px auto;padding:28px}
+    .hero{display:flex;gap:28px;align-items:center}
+    .brand{flex:1}
+    .brand h1{font-size:38px;margin:0 0 10px 0;letter-spacing:0.4px}
+    .brand p.lead{color:var(--muted);margin:0 0 18px 0;font-size:16px}
+    .ctas{display:flex;gap:12px}
+    .btn{background:linear-gradient(90deg,var(--accent),#ff7a7d);border:none;color:#071019;padding:12px 18px;border-radius:12px;font-weight:700;cursor:pointer;box-shadow:0 8px 18px rgba(255,59,63,0.12)}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#e6eef6;padding:10px 16px}
+
+    .hero-media{width:420px;min-width:300px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.04)}
+    .hero-media iframe{display:block;width:100%;height:260px;border:0}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .card h3{margin:0 0 8px 0;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+
+    .seo-list{margin-top:26px;background:rgba(255,255,255,0.02);padding:14px;border-radius:10px}
+    .seo-list h4{margin:0 0 8px 0}
+    .seo-list ul{margin:0;padding-left:18px;color:var(--muted)}
+
+    footer{margin-top:40px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{flex-direction:column-reverse}
+      .hero-media iframe{height:200px}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+
+  <!-- JSON-LD structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Activision",
+    "url": "https://www.activision.com/",
+    "sameAs": [
+      "https://www.youtube.com/@ActivisionGames"
+    ],
+    "description": "Official Activision — publishers of world-class games and esports. Find game updates, support, and video content."
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div class="brand">
+        <h1>Activision — Games, News & Community</h1>
+        <p class="lead">Official hub for Activision game announcements, trailers, esports schedules, support articles, and ways to buy or follow your favorite titles. Subscribe for the latest gameplay and developer updates.</p>
+        <div class="ctas">
+          <a class="btn" href="https://www.youtube.com/@ActivisionGames" target="_blank" rel="noopener noreferrer">Visit YouTube Channel</a>
+          <a class="btn secondary" href="#games">Explore Games</a>
+        </div>
+
+        <!-- Quick SEO-friendly content block -->
+        <div class="seo-list" aria-label="SEO keywords and search intents">
+          <h4>Common Google search intents we target</h4>
+          <ul>
+            <li>Activision games latest news</li>
+            <li>How to buy Activision games</li>
+            <li>Call of Duty updates and season pass</li>
+            <li>Activision support and account help</li>
+            <li>Activision careers and hiring</li>
+            <li>Activision esports events schedule</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <!-- Channel embed link (fallback to channel page if an embeddable video ID isn't provided) -->
+        <iframe src="https://www.youtube.com/@ActivisionGames" title="Activision YouTube Channel" allowfullscreen sandbox="allow-scripts allow-same-origin"></iframe>
+      </div>
+    </header>
+
+    <section id="games" class="grid" aria-label="Top Activision franchises">
+      <div class="card">
+        <h3>Call of Duty</h3>
+        <p>Fast-paced multiplayer, cinematic campaigns, and seasonal content. Search intent: "Call of Duty season update", "how to buy Call of Duty".</p>
+      </div>
+      <div class="card">
+        <h3>Diablo (Published partnerships)</h3>
+        <p>Dark action RPG experiences and expansions. Search intent: "Diablo latest patch", "Diablo expansion release date".</p>
+      </div>
+      <div class="card">
+        <h3>Franchises & Collaborations</h3>
+        <p>Activision partners and special crossovers. Search intent: "Activision crossover events", "Activision esports".</p>
+      </div>
+    </section>
+
+    <section style="margin-top:24px;display:flex;gap:18px;flex-wrap:wrap;">
+      <div style="flex:1;min-width:260px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)">
+        <h3 style="margin-top:0">Get Support</h3>
+        <p style="color:var(--muted);margin:8px 0 0 0">Find help with account issues, refunds, and technical support. Search intent: "Activision support", "Activision account help".</p>
+      </div>
+
+      <div style="width:320px;min-width:220px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)">
+        <h3 style="margin-top:0">Subscribe & Follow</h3>
+        <p style="color:var(--muted);margin:8px 0">Get the latest trailers and developer videos on the official YouTube channel.</p>
+        <a class="btn" href="https://www.youtube.com/@ActivisionGames" target="_blank" rel="noopener noreferrer">Subscribe on YouTube</a>
+      </div>
+    </section>
+
+    <section style="margin-top:28px">
+      <h2 style="margin:0 0 8px 0">On-page SEO & Content Suggestions</h2>
+      <p style="color:var(--muted);margin:0 0 12px 0">Use the following short content blocks across the site to capture high-intent search traffic.</p>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+        <div class="card"><h3 style="margin-top:0">Buying Guides</h3><p style="color:var(--muted)">"Where to buy Call of Duty", "Best retailers for Activision DLC"</p></div>
+        <div class="card"><h3 style="margin-top:0">Patch Notes & Updates</h3><p style="color:var(--muted)">Publish monthly patch notes to capture "update" searches.</p></div>
+        <div class="card"><h3 style="margin-top:0">Esports & Events</h3><p style="color:var(--muted)">Schedule pages and results for esports keywords.</p></div>
+        <div class="card"><h3 style="margin-top:0">Support & FAQ</h3><p style="color:var(--muted)">Actionable troubleshooting pages to satisfy "how to" queries.</p></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Activision. This is a marketing-style landing page template — replace placeholder content with official assets and embeddable video IDs for best results.</p>
+    </footer>
+  </div>
+</body>
+</html>
