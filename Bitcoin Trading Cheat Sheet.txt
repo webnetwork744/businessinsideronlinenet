@@ -1,0 +1,23 @@
+1. Bitcoin Trading Cheat Sheet
+
+Title: Bitcoin Quick Reference Guide
+Keywords: bitcoin trading tips, bitcoin guide, crypto trading strategies, Bitcoin indicators
+
+Contents:
+
+Topic	Key Points
+Market Types	Spot, Futures, Margin trading
+Candlestick Patterns	Doji, Hammer, Engulfing, Shooting Star
+Technical Indicators	RSI, MACD, EMA, Bollinger Bands
+Support & Resistance	Identify using historical highs/lows and trendlines
+Trading Strategies	Scalping, Swing trading, HODLing
+Risk Management	Max 2% risk per trade, stop-loss, position sizing
+News & Events	Monitor Bitcoin halving, macro events, regulations
+
+Tips:
+
+Always check market volume before entering trades.
+
+Avoid trading based purely on emotions.
+
+Use alerts for key price levels.
