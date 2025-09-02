@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>How to Use Local & Global Money Sending Apps & Services for Online Businesses</title>
+  <meta name="description" content="Step-by-step guide for online businesses: how to use local and global money-sending apps and services (PayPal, Wise, Stripe, Revolut, bank transfers). Choose the best option for fees, speed, and compliance." />
+  <meta name="keywords" content="how to use local and global money sending apps and services for online businesses, send money internationally for business, best payment apps for ecommerce, accept payments globally, cheapest cross-border transfer for business" />
+  <meta name="author" content="Online Payments Guide" />
+
+  <style>
+    /* Inline CSS landing page — single-file, responsive, accessible */
+    :root{
+      --accent:#0b6efd;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --muted:#57606a;
+      --radius:12px;
+      --pad:20px;
+      --maxw:1080px;
+      --shadow: 0 8px 30px rgba(12,18,28,0.06);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#0f1724;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:0 18px}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:var(--pad)}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6b21a8);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:18px}
+    nav{display:flex;gap:12px;align-items:center}
+    .btn{background:var(--accent);color:#fff;border:0;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:700}
+    h1{font-size:24px;margin:0 0 8px;line-height:1.05}
+    p.lead{color:var(--muted);margin:0 0 12px}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .chip{background:#eef6ff;padding:6px 10px;border-radius:999px;font-size:13px;color:#0b3a73}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+    section{margin:18px 0}
+    h2{font-size:18px;margin:0 0 10px}
+    h3{font-size:15px;margin:0 0 8px}
+    .small{font-size:13px;color:var(--muted)}
+    ul{margin:0 0 12px 18px}
+    input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef9;font-size:14px;box-sizing:border-box}
+    form > div{margin-bottom:10px}
+    footer{text-align:center;padding:16px 0;color:var(--muted);font-size:13px}
+    .feature{padding:12px;border-radius:10px;background:#fff;box-shadow:0 6px 18px rgba(8,20,40,0.03)}
+    .kpi{display:flex;gap:12px;flex-wrap:wrap}
+    .kpi .item{min-width:160px;padding:12px;border-radius:10px;background:#fbfdff;border:1px solid #eef6ff}
+    .faq .q{font-weight:700;margin-top:12px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;gap:16px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">OPG</div>
+        <div>
+          <div style="font-weight:800">Online Payments Guide</div>
+          <div class="small">Local & global money sending apps for online businesses</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#compare">Compare</a>
+        <a href="#faq">FAQ</a>
+        <button class="btn" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">Free Checklist</button>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <main>
+        <div class="card" role="main" aria-labelledby="main-heading">
+          <h1 id="main-heading">How to Use Local & Global Money Sending Apps & Services for Online Businesses</h1>
+          <p class="lead">A practical guide to choosing and using payment apps and transfer services (PayPal, Wise, Stripe, Revolut, bank transfers, local wallets) to receive and send money securely, cheaply, and fast — optimized for online sellers, freelancers, and SaaS businesses.</p>
+
+          <div class="chips" aria-hidden="true">
+            <div class="chip">international transfers</div>
+            <div class="chip">cheap cross-border payments</div>
+            <div class="chip">business payouts</div>
+            <div class="chip">accept payments online</div>
+          </div>
+
+          <section id="how" style="margin-top:14px">
+            <h2>How it works — step by step</h2>
+            <ol class="small">
+              <li><strong>Choose the right service:</strong> compare fees, currency support, limits, speed, and integrations.</li>
+              <li><strong>Verify your business:</strong> set up business accounts, complete KYC to lift limits and improve trust.</li>
+              <li><strong>Integrate with your stack:</strong> connect gateways to ecommerce, invoicing, or accounting tools (APIs, plugins).</li>
+              <li><strong>Set pricing & fees:</strong> decide who covers transfer fees and add currency conversion buffers if needed.</li>
+              <li><strong>Automate payouts:</strong> schedule mass payouts to contractors or suppliers using batch tools or APIs.</li>
+            </ol>
+          </section>
+
+          <section id="compare" class="card" style="margin-top:12px;padding:14px">
+            <h2>Compare popular options (quick view)</h2>
+            <div class="grid-3" style="margin-top:10px">
+              <div class="feature">
+                <h3>PayPal / PayPal Business</h3>
+                <div class="small">Great for buyer protection and global reach. Fees can be higher; good for marketplaces and quick buyer checkout.</div>
+                <ul class="small">
+                  <li>Strengths: ubiquity, buyer trust, easy checkout</li>
+                  <li>Consider: conversion & withdrawal fees, disputes</li>
+                </ul>
+              </div>
+
+              <div class="feature">
+                <h3>Wise (formerly TransferWise)</h3>
+                <div class="small">Low-cost FX, transparent fees, multi-currency accounts — excellent for cross-border transfers and paying contractors.</div>
+                <ul class="small">
+                  <li>Strengths: low FX margin, multi-currency balances</li>
+                  <li>Consider: not a checkout gateway — combine with payment processors</li>
+                </ul>
+              </div>
+
+              <div class="feature">
+                <h3>Stripe</h3>
+                <div class="small">Powerful payments platform with global payout options, subscriptions, and developer-friendly APIs.</div>
+                <ul class="small">
+                  <li>Strengths: subscriptions, fraud tools, extensible</li>
+                  <li>Consider: setup complexity and country availability</li>
+                </ul>
+              </div>
+
+              <div class="feature">
+                <h3>Revolut for Business</h3>
+                <div class="small">Multi-currency accounts with cards and fast transfers — good for SMEs and teams working internationally.</div>
+                <ul class="small">
+                  <li>Strengths: corporate cards, FX limits</li>
+                  <li>Consider: monthly plans may be needed for full features</li>
+                </ul>
+              </div>
+
+              <div class="feature">
+                <h3>Local Wallets & Bank Transfers</h3>
+                <div class="small">Local payment rails (e.g., UPI, Pix, SEPA) are usually cheapest and fastest within region — ideal for local customers.</div>
+                <ul class="small">
+                  <li>Strengths: low fees, high local adoption</li>
+                  <li>Consider: integration and reconciliation complexity</li>
+                </ul>
+              </div>
+
+              <div class="feature">
+                <h3>Escrow & Marketplaces</h3>
+                <div class="small">Use escrow services or marketplace platforms when trust and dispute resolution are essential for higher-value transactions.</div>
+              </div>
+            </div>
+          </section>
+
+          <section style="margin-top:14px">
+            <h2>Security & Compliance (must-do's)</h2>
+            <ul class="small">
+              <li>Enable 2-factor authentication on all business accounts.</li>
+              <li>Complete KYC/AML checks and keep business documents up to date.</li>
+              <li>Record and reconcile transfers weekly to catch errors quickly.</li>
+              <li>Use invoice templates and clear payment terms (currency, who pays fees, refund policy).</li>
+            </ul>
+          </section>
+
+          <section style="margin-top:14px">
+            <h2>Practical setups for common business models</h2>
+            <div class="kpi" style="margin-top:10px">
+              <div class="item">
+                <strong>Ecommerce store:</strong> Stripe or PayPal for checkout + Wise for settling foreign earnings to your bank.
+              </div>
+              <div class="item">
+                <strong>Freelancers / Agencies:</strong> Wise or Revolut for fast contractor payouts; PayPal for client invoices.
+              </div>
+              <div class="item">
+                <strong>Marketplaces:</strong> Stripe Connect or PayPal Commerce Platform to split payments and handle KYC.
+              </div>
+            </div>
+          </section>
+
+          <section id="faq" class="card" style="margin-top:14px;padding:14px">
+            <h2>FAQ — Related search queries</h2>
+            <div class="faq small">
+              <div class="q">Q: Which app is cheapest to send money internationally?</div>
+              <div>A: Usually Wise for pure currency transfers (low FX margin). Local rails like SEPA/Pix are cheapest within regions.</div>
+
+              <div class="q">Q: Can I use personal PayPal for my business?</div>
+              <div>A: You can, but a business account gives better features (invoicing, higher limits, seller protections) and is recommended.</div>
+
+              <div class="q">Q: How do I handle refunds and chargebacks?</div>
+              <div>A: Keep policies clear, document deliveries, and use dispute resolution tools provided by your payment processor (PayPal/Stripe).</div>
+
+              <div class="q">Q: What about tax & reporting?</div>
+              <div>A: Track income by currency and region. Consult an accountant familiar with cross-border sales and VAT/GST rules in your markets.</div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <aside class="card" id="download" aria-labelledby="download-heading" style="min-width:280px">
+        <h3 id="download-heading" style="margin-top:0">Free Checklist: Payment Setup for Online Businesses</h3>
+        <p class="small">Get the one-page checklist: choose services, set fees, integrate, and secure your payment flows. Delivered as a downloadable PDF (instant).</p>
+
+        <form id="leadForm" onsubmit="event.preventDefault();submitForm()" aria-label="Download checklist">
+          <div><label for="name" class="small">Full name</label><input id="name" name="name" type="text" placeholder="Your full name" required aria-required="true" /></div>
+          <div><label for="email" class="small">Business email</label><input id="email" name="email" type="email" placeholder="you@business.com" required /></div>
+          <div><label for="region" class="small">Primary market / region</label>
+            <select id="region" name="region" required>
+              <option value="">Select region</option>
+              <option>North America</option>
+              <option>Europe</option>
+              <option>Asia-Pacific</option>
+              <option>Latin America</option>
+              <option>Global / Multiple</option>
+            </select>
+          </div>
+
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button class="btn" type="submit">Get Checklist — Free</button>
+            <button type="button" onclick="location.href='#compare'" style="border:1px solid #eef6ff;background:transparent;padding:10px 12px;border-radius:8px">Compare Services</button>
+          </div>
+          <div class="small" style="margin-top:10px">We never sell your info. Unsubscribe any time.</div>
+        </form>
+
+        <div id="thanks" style="display:none;margin-top:12px;padding:10px;border-radius:8px;background:#f1fff4;color:#044d2b">
+          Thanks — your checklist is ready. Check your inbox (and promotions folder).
+        </div>
+      </aside>
+    </div>
+
+    <footer class="card" style="margin-top:18px">
+      <div style="font-weight:800">Set up secure, low-cost payment flows for your online business</div>
+      <div class="small" style="margin-top:8px">Start with one checkout + one low-cost transfer account — scale as your volume grows.</div>
+      <div style="margin-top:10px;color:var(--muted)">© <span id="year"></span> Online Payments Guide — All rights reserved.</div>
+    </footer>
+  </div>
+
+  <script>
+    // Minimal front-end behavior: simulate sending checklist (no network calls)
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function submitForm(){
+      var name = document.getElementById('name').value || 'friend';
+      var email = document.getElementById('email').value || '';
+      // Basic client-side validation (already required in form fields)
+      document.getElementById('leadForm').style.display = 'none';
+      document.getElementById('thanks').style.display = 'block';
+      // For a real implementation: send data to your server or mailing provider here.
+      console.log('Download requested by:', name, email);
+    }
+  </script>
+</body>
+</html>
