@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Comprehensive ZLOEmu tutorials: installation, setup, multiplayer servers, mods, troubleshooting, and advanced configuration for GTA IV online.">
+<meta name="keywords" content="ZLOEmu tutorials, GTA IV online, ZLOEmu installation, ZLOEmu server setup, multiplayer GTA IV, ZLOEmu mods, ZLOEmu troubleshooting">
+<title>ZLOEmu Tutorials - BattleField Online Setup & Guides</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+header {
+    background-color: #1e1e1e;
+    padding: 40px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #00ffcc;
+}
+header p {
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: #ccc;
+}
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+}
+h2 {
+    color: #00ffcc;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+h3 {
+    color: #00bfff;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #00ffcc;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background-color: #00d1a8;
+}
+footer {
+    background-color: #1e1e1e;
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>ZLOEmu Tutorials</h1>
+    <p>Complete Guides for GTA IV Online, Server Setup, Mods, and Troubleshooting</p>
+</header>
+
+<div class="container">
+    <h2>🛠️ Setup & Installation</h2>
+    <ul>
+        <li><a href="#">How to Download and Install ZLOEmu</a> – Step-by-step guide for Windows and Mac users.</li>
+        <li><a href="#">Configuring ZLOEmu for GTA IV</a> – Setup directories, patches, and optimal settings.</li>
+        <li><a href="#">Running ZLOEmu on Low-End PCs</a> – Performance tweaks and FPS improvements.</li>
+    </ul>
+
+    <h2>🎮 Gameplay & Multiplayer</h2>
+    <ul>
+        <li><a href="#">Connecting to ZLOEmu Servers</a> – Join public and private GTA IV servers.</li>
+        <li><a href="#">Hosting Your Own ZLOEmu Server</a> – Configure server rules, player limits, and mods.</li>
+        <li><a href="#">Installing and Using Mods</a> – Enhance multiplayer experience with mods and custom content.</li>
+        <li><a href="#">Troubleshooting Multiplayer Issues</a> – Connection timeouts, NAT errors, and other common fixes.</li>
+    </ul>
+
+    <h2>🔧 Advanced Configuration & Optimization</h2>
+    <ul>
+        <li><a href="#">Optimizing ZLOEmu Performance</a> – Network, graphics, and stability adjustments.</li>
+        <li><a href="#">Customizing Gameplay Rules</a> – XP, money, map rotation, and game mode tweaks.</li>
+        <li><a href="#">Backup & Restore ZLOEmu Files</a> – Safe storage and migration of configs and saves.</li>
+    </ul>
+
+    <h2>📺 Video & Visual Tutorials</h2>
+    <ul>
+        <li><a href="#">Step-by-Step Installation Video</a> – Visual walkthrough of ZLOEmu setup.</li>
+        <li><a href="#">Gameplay Demonstrations</a> – Popular servers, mods, and multiplayer strategies.</li>
+        <li><a href="#">Troubleshooting Video Guides</a> – Fix errors, crashes, and connection issues.</li>
+    </ul>
+
+    <h2>🧠 Community & Support</h2>
+    <ul>
+        <li><a href="#">Reporting Bugs and Issues</a> – How to submit effective bug reports.</li>
+        <li><a href="#">Joining ZLOEmu Communities</a> – Connect with modders and active players.</li>
+    </ul>
+
+    <a class="cta-button" href="https://zloemu.net/" target="_blank">Visit ZLOEmu Official Website</a>
+</div>
+
+<footer>
+    <p>&copy; 2025 ZLOEmu Tutorials. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
