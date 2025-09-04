@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🔐 How to Use End‑to‑End Encryption in Bitrix24 | Leo Nine Real Estate — Islamabad</title>
+  <meta name="description" content="Step-by-step guide for Leo Nine Real Estate on enabling Bitrix24 end-to-end encryption (E2EE), securing chats, calls, files, devices, 2FA, and optional self-hosted setup.">
+  <meta name="keywords" content="encrypted real estate CRM Islamabad, secure property transactions Pakistan, Bitrix24 end-to-end encryption guide, Bitrix24 E2EE Pakistan, secure real estate Islamabad, PWD property dealers security, encrypted CRM for real estate">
+  <meta property="og:title" content="How Leo Nine Uses Bitrix24 End‑to‑End Encryption">
+  <meta property="og:description" content="Enable E2EE chats & calls, secure file sharing, 2FA, device encryption, and on‑premise options.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b5">
+  <style>
+    :root{
+      --bg:#0b0f14;--panel:#0f1720;--muted:#99a3ad;--txt:#e6f2ff;--brand:#20c997;--brand-2:#35a7ff;--accent:#ffe066;--border:#1f2a37;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#0a1218 60%, #0b1117);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+    .wrap{max-width:1080px;margin:0 auto;padding:24px}
+    .hero{display:flex;gap:28px;align-items:center;justify-content:space-between;padding:32px;border:1px solid var(--border);background:radial-gradient(1200px 400px at 0% -10%,rgba(32,201,151,.15),transparent 60%),linear-gradient(180deg,var(--panel),#0c131b);border-radius:20px;box-shadow:var(--shadow)}
+    .hero h1{margin:0;font-size:clamp(26px,4vw,42px);line-height:1.15}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(32,201,151,.12);color:#b7ffe6;border:1px solid rgba(32,201,151,.35);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
+    .hero p{margin:10px 0 0;color:var(--muted)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{background:var(--brand);color:#002218;padding:12px 16px;border-radius:12px;border:0;font-weight:700;cursor:pointer;text-decoration:none;box-shadow:0 8px 18px rgba(32,201,151,.3)}
+    .btn.alt{background:transparent;color:var(--txt);border:1px solid var(--border)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:28px}
+    .card{grid-column:span 12;background:linear-gradient(180deg,#0e1620,#0b131b);border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+    .card h2{margin:0 0 8px;font-size:clamp(20px,2.7vw,28px)}
+    .card p, .card li{color:#cfe7ff}
+    .step{counter-reset:item}
+    .step h3{font-size:18px;margin:14px 0 6px}
+    .step ol{list-style:none;padding-left:0;margin:0}
+    .step ol li{position:relative;padding-left:42px;margin:10px 0}
+    .step ol li::before{counter-increment:item;content:counter(item);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001313;font-weight:800;display:grid;place-items:center}
+    .checklist{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .chip{border:1px solid var(--border);background:#0b141c;border-radius:10px;padding:10px 12px;color:#d9f2ff}
+    .faq summary{cursor:pointer;padding:14px 16px;background:#0c141c;border:1px solid var(--border);border-radius:12px}
+    .faq details{margin:10px 0}
+    .faq p{padding:0 16px 8px;color:#cfe7ff}
+    .footer{margin:28px 0 10px;color:var(--muted);font-size:13px;text-align:center}
+    .kpis{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+    .kpi{flex:1 1 160px;background:#0c141c;border:1px solid var(--border);border-radius:12px;padding:10px 12px}
+    .kpi strong{display:block;font-size:20px}
+    .tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .tag{font-size:12px;border:1px dashed #1f3548;border-radius:999px;padding:6px 10px;color:#9edcff;background:#0a1620}
+    .trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .trust span{font-size:12px;border:1px solid var(--border);background:#0c141c;border-radius:999px;padding:6px 10px;color:#cfe7ff}
+    .mini{font-size:12px;color:var(--muted)}
+    @media (min-width:800px){.card.half{grid-column:span 6}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TechArticle",
+    "headline":"How to Use End‑to‑End Encryption in Bitrix24",
+    "about":["Bitrix24","end-to-end encryption","secure real estate CRM"],
+    "author":{"@type":"Organization","name":"Leo Nine Real Estate"},
+    "audience":{"@type":"Audience","audienceType":"Real estate buyers, sellers, tenants in Islamabad"}
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div style="max-width:720px">
+        <span class="badge">🔐 Secure CRM Guide • Bitrix24 E2EE</span>
+        <h1>How to Use End‑to‑End Encryption in Bitrix24</h1>
+        <p>Step‑by‑step instructions tailored for <strong>Leo Nine Real Estate — Gul Plaza, PWD Main Road, Islamabad</strong> to keep client data, property documents, and financial discussions private and protected.</p>
+        <div class="trust">
+          <span>HTTPS/SSL in transit</span>
+          <span>E2EE chats & calls</span>
+          <span>Encrypted at rest</span>
+          <span>2FA for all users</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="#steps">Get the Steps</a>
+          <a class="btn alt" href="#faq">Read FAQs</a>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><strong>0</strong><span class="mini">Unsecured chats recommended</span></div>
+          <div class="kpi"><strong>100%</strong><span class="mini">Encrypted file flow in secure chats</span></div>
+          <div class="kpi"><strong>2FA</strong><span class="mini">Mandatory on all accounts</span></div>
+        </div>
+      </div>
+      <div aria-hidden="true" style="flex:1;display:grid;place-items:center">
+        <div style="width:220px;height:220px;border-radius:28px;background:conic-gradient(from 120deg,var(--brand),#1cd2d2,var(--brand-2),var(--brand));display:grid;place-items:center;box-shadow:var(--shadow);">
+          <div style="width:180px;height:180px;border-radius:22px;background:linear-gradient(180deg,#0a141c,#0d1a25);border:1px solid var(--border);display:grid;place-items:center;color:#b7ffe6;font-size:58px">🔒</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="steps" class="grid">
+      <article class="card step">
+        <h2>1) Understand What Bitrix24 Encrypts</h2>
+        <ul class="checklist">
+          <li class="chip"><strong>Default Security:</strong> Bitrix24 uses <em>HTTPS/SSL</em> for all data transfers.</li>
+          <li class="chip"><strong>E2EE:</strong> Available in <em>Messenger</em> and <em>video calls</em>; only participants can read content.</li>
+          <li class="chip"><strong>Database Security:</strong> CRM data (contacts, deals, files) is <em>encrypted at rest</em> in the cloud.</li>
+        </ul>
+      </article>
+
+      <article class="card step">
+        <h2>2) Enable Encrypted Chat & Video Calls</h2>
+        <ol>
+          <li>Open Bitrix24 (web or desktop).</li>
+          <li>Go to <strong>Messenger</strong> and start a private chat.</li>
+          <li>Click the <strong>shield icon 🔒</strong> in the chat window to enable <strong>E2EE</strong>.</li>
+          <li>For <strong>video calls</strong>, ensure both sides use the latest desktop or mobile app — E2EE turns on automatically.</li>
+        </ol>
+        <p><em>This keeps discussions on prices, financials, and personal details confidential.</em></p>
+      </article>
+
+      <article class="card step">
+        <h2>3) Secure File Sharing with E2EE</h2>
+        <p>When sending <strong>property documents, agreements, or CNIC scans</strong> in Bitrix24 chats, ensure the conversation is <strong>in E2EE mode</strong>. Files exchanged here are stored securely and can’t be accessed without proper authorization.</p>
+      </article>
+
+      <article class="card step half">
+        <h2>4) Use Two‑Factor Authentication (2FA)</h2>
+        <ol>
+          <li>Go to <strong>Bitrix24 → Security Settings</strong>.</li>
+          <li>Enable <strong>2FA</strong> via SMS or authenticator apps (e.g., Google Authenticator).</li>
+          <li><strong>Require</strong> all Leo Nine team members to use 2FA.</li>
+        </ol>
+        <p class="mini">Even with encryption, 2FA stops account takeovers if a password leaks.</p>
+      </article>
+
+      <article class="card step half">
+        <h2>5) Encrypt Your Local Devices</h2>
+        <ol>
+          <li>Turn on disk encryption: <strong>BitLocker (Windows)</strong> or <strong>FileVault (Mac)</strong>.</li>
+          <li>Use strong device passcodes and enable <strong>auto‑lock</strong>.</li>
+          <li>Keep OS and antivirus <strong>up to date</strong>.</li>
+        </ol>
+        <p class="mini">Protects data on laptops/phones used to access the CRM.</p>
+      </article>
+
+      <article class="card step">
+        <h2>6) For Maximum Security: Self‑Hosted Bitrix24</h2>
+        <p>Consider <strong>Bitrix24 On‑Premise</strong> if you want total control in Islamabad. This allows custom firewalls, your own backup rules, and organization‑wide encryption policies for CRM data. It requires IT expertise but gives full security independence.</p>
+      </article>
+
+      <article class="card">
+        <h2>✅ Pro Tip: Content Marketing for Leo Nine</h2>
+        <p>Turn this guide into a blog post titled <strong>“How Leo Nine Real Estate Protects Client Data with Bitrix24 Encrypted CRM”</strong>.</p>
+        <div class="tag-row">
+          <span class="tag">encrypted real estate CRM Islamabad</span>
+          <span class="tag">secure property transactions Pakistan</span>
+          <span class="tag">Bitrix24 end‑to‑end encryption guide</span>
+          <span class="tag">secure real estate Islamabad</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="faq" class="card faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>Is everything in Bitrix24 end‑to‑end encrypted?</summary>
+        <p>Bitrix24 uses HTTPS for all traffic and encrypts data at rest. <strong>End‑to‑end encryption</strong> applies to <em>Messenger chats</em> and <em>video calls</em>; enable secure chat (🔒) for maximum privacy.</p>
+      </details>
+      <details>
+        <summary>Do clients need a Bitrix24 account for E2EE?</summary>
+        <p>For private E2EE chats/calls inside Bitrix24, participants use Bitrix24 apps. For external clients, use secure portals or invite them to a protected space and confirm identity before sharing sensitive data.</p>
+      </details>
+      <details>
+        <summary>What if a device is lost?</summary>
+        <p>With disk encryption (BitLocker/FileVault) and 2FA enabled, risk is minimized. Revoke the user session from the Bitrix24 admin panel and change credentials immediately.</p>
+      </details>
+    </section>
+
+    <section class="footer">
+      <div>© <span id="yr">2025</span> Leo Nine Real Estate • Office #5, First Floor, Gul Plaza, Main Road, PWD, Islamabad • <a href="tel:+923315170723" style="color:#9edcff;text-decoration:none">0331 5170723</a></div>
+      <div class="mini">Built as a secure landing page with inline CSS. No external libraries required.</div>
+    </section>
+  </div>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
