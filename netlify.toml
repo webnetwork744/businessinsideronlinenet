@@ -6,9 +6,6 @@
 
 [[plugins]]
   package = "netlify-plugin-minify-html"
-
-[[plugins]]
-  package = "netlify-plugin-minify-html"
   [plugins.inputs]
     failOnParseError = false
 
