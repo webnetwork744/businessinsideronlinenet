@@ -6,7 +6,8 @@
 
 [[plugins]]
   package = "netlify-plugin-minify-html"
-  [plugins.inputs]
-    failOnParseError = false
+  [plugins.inputs.minifierOptions]
+    removeComments = true
+    collapseWhitespace = true
 
 
