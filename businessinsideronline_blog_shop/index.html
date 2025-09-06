@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Business Insider Online — Buy Business Blogs</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">Business Insider Online</a>
+    <nav>
+      <a href="/blogs.html">Blogs</a>
+      <a href="/cart.html">Cart</a>
+      <a href="/checkout.html">Checkout</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero card">
+    <h1>Buy Ready-to-Publish Blog Posts for Your Business</h1>
+    <p class="muted">SEO-friendly, business-focused blog posts you can buy and publish instantly.</p>
+    <div class="cta">
+      <a class="btn" href="/blogs.html">Browse Blogs</a>
+      <a class="btn-outline" href="/contact.html">Contact</a>
+    </div>
+  </section>
+
+  <section class="featured">
+    <h2>Featured Posts</h2>
+    <div class="grid-3" id="featured-list">
+      <!-- JS will populate featured items from /data or hardcoded list -->
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container center">
+    <p>&copy; <!--YEAR--> Business Insider Online — Professional blog content for businesses.</p>
+  </div>
+</footer>
+
+<script src="assets/js/cart.js"></script>
+<script>
+// Demo featured items to show on homepage
+const featured = [
+  {id:1,title:'5 Ways to Increase Local Sales',excerpt:'Actionable tips to boost local sales',price:49},
+  {id:2,title:'Content Marketing for Startups',excerpt:'Growth-focused blog post for startups',price:79},
+  {id:3,title:'SEO Essentials for Small Business',excerpt:'Quick SEO checklist',price:39}
+];
+const el = document.getElementById('featured-list');
+featured.forEach(p=>{
+  const d=document.createElement('div'); d.className='card product-card';
+  d.innerHTML = `<h3>${p.title}</h3><p class="muted">${p.excerpt}</p><div class="price">$${p.price.toFixed(2)}</div><button onclick="addToCart(${p.id}, ${JSON.stringify(p.title)}, ${p.price})" class="btn">Add to cart</button> <a class="btn-outline" href="/blogs.html#p${p.id}">View</a>`;
+  el.appendChild(d);
+});
+</script>
+</body>
+</html>
