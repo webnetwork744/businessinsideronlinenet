@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Set up File Sharing Between Android, Windows & iOS — Upload to Websites, Blogs & YouTube (with vidIQ)</title>
+  <meta name="description" content="Step-by-step guide to set up multiple file sharing methods between Android, Windows and iOS devices and upload to websites, blogs or YouTube. Includes cloud, SMB, FTP, WebDAV, Syncthing, NAS, and vidIQ tips for YouTube SEO." />
+  <meta name="keywords" content="share files between Android and Windows, share files iOS to Windows, Android to iOS file transfer, upload files to website FTP, upload to blog WordPress, upload videos to YouTube vidIQ, sync files Syncthing, cloud sharing Google Drive OneDrive Dropbox" />
+  <style>
+    :root{--accent:#0b66c2;--muted:#556074;--bg:#f6fbff;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;background:var(--bg);color:#0b2336}
+    .wrap{max-width:1100px;margin:28px auto;padding:20px}
+    header{display:flex;gap:14px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2aa0ff);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+    h1{margin:0;font-size:24px}
+    p.lead{margin:6px 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:18px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(11,35,54,0.06)}
+    h2{font-size:18px;margin:8px 0}
+    ol,ul{color:var(--muted);padding-left:18px}
+    .keywords{font-size:13px;color:var(--muted);margin-top:8px}
+    nav.toc a{display:block;padding:8px 0;color:var(--accent);text-decoration:none}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef6ff;color:var(--accent);font-weight:700}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+
+    .cta{display:flex;gap:10px;margin-top:12px}
+    a.btn{padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-outline{border:1px solid #dfeefb;color:var(--accent);background:transparent}
+
+    @media(max-width:920px){.grid{grid-template-columns:1fr}.logo{width:56px;height:56px}}
+    code{background:#f3f6f9;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">SHR</div>
+      <div>
+        <h1>Set up File Sharing Between Android, Windows & iOS</h1>
+        <p class="lead">Practical guide: cloud, SMB/NFS, FTP/WebDAV, Syncthing, NAS, Nearby Share & AirDrop alternatives — plus how to upload to websites, blogs (WordPress) and YouTube with vidIQ SEO tips.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <article class="card">
+          <div class="pill">Devices: Android • Windows • iOS • macOS</div>
+
+          <section>
+            <h2>1. Quick overview — choose the right method</h2>
+            <ul>
+              <li><strong>Cloud storage (easy):</strong> Google Drive, OneDrive, Dropbox — best for documents, photos, and cross-platform syncing.</li>
+              <li><strong>SMB / Network shares:</strong> Windows file sharing — ideal for local LAN transfers between PC and Android (via apps) and some iOS file managers.</li>
+              <li><strong>FTP / SFTP / WebDAV:</strong> Good for uploading to websites, blogs, and custom servers. Secure SFTP for sensitive data.</li>
+              <li><strong>Syncthing / Resilio:</strong> Peer-to-peer sync across devices without cloud storage.</li>
+              <li><strong>NAS (Synology, QNAP):</strong> Central storage approach — provides SMB, WebDAV, FTP, and mobile apps for cross-device access.</li>
+              <li><strong>Nearby Share / AirDrop:</strong> Fast local transfers — Nearby Share for Android/Windows (with Google app) and AirDrop for iOS/macOS.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>2. Step-by-step: Cloud storage (Google Drive / OneDrive / Dropbox)</h2>
+            <ol>
+              <li>Install the provider's app on Android and iOS; sign in on Windows via app or web.</li>
+              <li>Upload files from any device → they sync automatically.</li>
+              <li>On Windows: use the synced folder (OneDrive/Google Drive for Desktop) for drag-and-drop uploads to websites via FTP or CMS.</li>
+              <li>Share public or private links for students, blogs, or collaborators; set permissions and expiry when needed.</li>
+            </ol>
+            <p class="keywords">Keywords: share files between Android and Windows using Google Drive, OneDrive file sync Android iOS</p>
+          </section>
+
+          <section>
+            <h2>3. Step-by-step: SMB / Windows File Sharing</h2>
+            <ol>
+              <li>On Windows: Right-click a folder → Properties → Sharing → Share &gt; choose users or Everyone and set permissions.</li>
+              <li>Find the PC's local IP (run <code>ipconfig</code>) and use that address (\\192.168.x.x\share) in Android file manager apps (Solid Explorer, CX File Explorer) or in iOS via apps that support SMB.</li>
+              <li>Map network drives on Windows for convenience: Right-click This PC → Map network drive.</li>
+            </ol>
+            <p class="keywords">Keywords: set up SMB share Android to Windows, access Windows shared folder from iPhone</p>
+          </section>
+
+          <section>
+            <h2>4. Step-by-step: FTP / SFTP / WebDAV (for websites & blogs)</h2>
+            <ol>
+              <li>Set up an FTP/SFTP account on your hosting provider or server. Use SFTP for secure transfers.</li>
+              <li>Use an FTP client on Windows (FileZilla) to upload files to your website public_html or WordPress <code>wp-content/uploads</code> folder.</li>
+              <li>From Android/iOS use apps like <em>FE File Explorer</em> or <em>AndFTP</em> to connect to SFTP and upload directly from mobile.</li>
+              <li>For WordPress: Media &gt; Add New or use an FTP-uploaded file and then regenerate thumbnails or use a plugin to import.</li>
+            </ol>
+            <p class="keywords">Keywords: upload to WordPress via FTP from Android, upload files to website from iPhone</p>
+          </section>
+
+          <section>
+            <h2>5. Peer-to-peer sync: Syncthing (no cloud)</h2>
+            <ol>
+              <li>Install Syncthing on Windows and Android (F-Droid or Play Store) and on iOS (third-party builds or WebDAV workaround).</li>
+              <li>Create a shared folder on Windows and add device IDs from Android/iOS to pair devices.</li>
+              <li>Files sync directly between devices over LAN or Internet (encrypted), keeping copies on each device.</li>
+            </ol>
+            <p class="keywords">Keywords: Syncthing setup Android Windows iOS, peer-to-peer file sync without cloud</p>
+          </section>
+
+          <section>
+            <h2>6. NAS: Centralized storage approach (Synology / QNAP)</h2>
+            <ol>
+              <li>Set up NAS on your network and create user accounts and shared folders.</li>
+              <li>Enable services you need: SMB, FTP, WebDAV, and cloud sync (optional).</li>
+              <li>Install mobile apps (DS File, Qfile) to access and upload from Android/iOS. Use NAS web panel or mapped drive on Windows.</li>
+            </ol>
+            <p class="keywords">Keywords: Synology share files to Android iOS Windows, NAS file sharing mobile apps</p>
+          </section>
+
+          <section>
+            <h2>7. Fast local transfers: Nearby Share & AirDrop alternatives</h2>
+            <ul>
+              <li><strong>Nearby Share (Android ↔ Windows):</strong> Google offers Nearby Share for some Windows builds — install the official tool and use Share menu.</li>
+              <li><strong>AirDrop (iOS/macOS):</strong> Use AirDrop for iPhone to Mac; for Windows/Android, use apps like Snapdrop (browser-based) or third-party tools.</li>
+              <li><strong>Snapdrop / Wormhole:</strong> Browser-based quick transfers over local network — no installs required.</li>
+            </ul>
+            <p class="keywords">Keywords: Nearby Share Windows Android, AirDrop alternative Windows Android iPhone</p>
+          </section>
+
+          <section>
+            <h2>8. Uploading videos to YouTube with vidIQ</h2>
+            <ol>
+              <li>Prepare video on Windows or mobile; compress/export using HandBrake or native editors for optimal upload size and bitrate.</li>
+              <li>Transfer video to the device you'll upload from (cloud sync, FTP, or direct USB transfer).</li>
+              <li>Upload via YouTube Studio (web or mobile). Use vidIQ extension/plugin to research keywords, tags, and titles before publishing.</li>
+              <li>Use vidIQ suggested tags, optimized title, and description templates. Schedule publishing and add subtitles (SRT) for accessibility.</li>
+            </ol>
+            <p class="keywords">Keywords: upload video to YouTube from Android, upload YouTube video from Windows using vidIQ, vidIQ YouTube SEO tips</p>
+          </section>
+
+          <section>
+            <h2>9. Automation & workflows</h2>
+            <ul>
+              <li>Use Zapier, IFTTT, or Make (Integromat) to automate uploads from cloud folders to WordPress or cloud-to-cloud sync.</li>
+              <li>Use scripts (PowerShell, bash) to move files from synced folders into FTP clients for scheduled uploads.</li>
+            </ul>
+            <p class="keywords">Keywords: automate file uploads WordPress from Google Drive, schedule FTP upload PowerShell</p>
+          </section>
+
+          <section>
+            <h2>10. Security & best practices</h2>
+            <ul>
+              <li>Always prefer SFTP over FTP and HTTPS links for downloads.</li>
+              <li>Use strong passwords, 2FA on cloud accounts, and least-privilege sharing links.</li>
+              <li>Keep backups and enable versioning on cloud storage to recover deleted files.</li>
+              <li>Compress and transcode large video files before upload to save bandwidth.</li>
+            </ul>
+          </section>
+
+          <div class="cta">
+            <a class="btn btn-primary" href="#download">Download step-by-step cheat sheet (PDF)</a>
+            <a class="btn btn-outline" href="#contact">Request custom workflow for my devices</a>
+          </div>
+
+        </article>
+
+        <article class="card" style="margin-top:14px">
+          <h2>Quick troubleshooting</h2>
+          <ul>
+            <li>Can't access SMB share: check firewall, ensure SMB v1/v2 settings, and matching credentials.</li>
+            <li>Cloud sync not updating: check app background permissions on Android/iOS and selective sync settings on desktop clients.</li>
+            <li>FTP uploads failing: verify host, port, credentials, and passive/active mode in client settings.</li>
+            <li>Slow video uploads: reduce bitrate/resolution, use wired connection, or upload from a faster device.</li>
+          </ul>
+        </article>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Contents</h3>
+          <nav class="toc">
+            <a href="#">Overview</a>
+            <a href="#">Cloud storage</a>
+            <a href="#">SMB</a>
+            <a href="#">FTP/SFTP/WebDAV</a>
+            <a href="#">Syncthing</a>
+            <a href="#">NAS</a>
+            <a href="#">Nearby Share & AirDrop</a>
+            <a href="#">YouTube & vidIQ</a>
+            <a href="#">Automation</a>
+            <a href="#">Security</a>
+          </nav>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Suggested SEO keywords</h3>
+          <ul>
+            <li>share files between Android and Windows</li>
+            <li>transfer files iPhone to PC</li>
+            <li>upload to WordPress from Android</li>
+            <li>upload video to YouTube from mobile vidIQ</li>
+            <li>setup Syncthing Android Windows</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Tools & apps recommended</h3>
+          <ul>
+            <li>Google Drive, OneDrive, Dropbox</li>
+            <li>Solid Explorer, FE File Explorer, CX File Explorer (Android)</li>
+            <li>FileZilla, WinSCP (Windows)</li>
+            <li>HandBrake (video compression), Syncthing, Resilio</li>
+            <li>vidIQ extension & mobile app for YouTube SEO</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © 2025 — Guide: Set up cross-platform file sharing and upload workflows. Replace generic steps with your hosting/CMS specifics for best results.
+    </footer>
+  </div>
+</body>
+</html>
