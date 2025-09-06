@@ -9,5 +9,15 @@
   [plugins.inputs.minifierOptions]
     removeComments = true
     collapseWhitespace = true
+    
+[build]
+  publish = "/"
+  command = ""
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
 
 
