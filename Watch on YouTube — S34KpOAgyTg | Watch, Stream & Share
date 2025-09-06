@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watch on YouTube — S34KpOAgyTg | Watch, Stream & Share</title>
+  <meta name="description" content="Watch the YouTube video (ID: S34KpOAgyTg) — streaming, highlights, and related playlist. Fast access, SEO-friendly landing page to help users find and watch this video on YouTube.">
+  <meta name="keywords" content="YouTube video,S34KpOAgyTg,watch YouTube,stream video,YouTube playlist,watch online,video highlights,embed YouTube">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Watch on YouTube — S34KpOAgyTg">
+  <meta property="og:description" content="Open, watch, and share the YouTube video (ID: S34KpOAgyTg). Includes embed, summary, and related playlist navigation for quick discovery.">
+  <meta property="og:type" content="video.other">
+  <meta property="og:url" content="https://www.youtube.com/watch?v=S34KpOAgyTg">
+  <meta property="og:site_name" content="YouTube Landing">
+  <style>
+    /* Inline CSS: clean, responsive landing */
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#ff3b3b;--muted:#9aa4b2;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#071021 0%,#081827 100%);color:#e6eef6;line-height:1.45}
+    .container{max-width:980px;margin:36px auto;padding:20px}
+    .card{background:linear-gradient(180deg,var(--glass),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.04);padding:20px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    header{display:flex;gap:16px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#ff5a5a,#ffb38f);display:flex;align-items:center;justify-content:center;font-weight:700;color:#081827}
+    h1{font-size:20px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}
+
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr} .aside iframe{height:220px}}
+
+    .video-wrap{background:transparent;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+    iframe{width:100%;height:360px;border:0;display:block}
+    .meta{padding:12px}
+    .cta{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .btn{background:linear-gradient(90deg,var(--accent),#ff7b7b);padding:10px 14px;border-radius:10px;color:#071827;font-weight:600;text-decoration:none;border:0;display:inline-block}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#e6eef6}
+
+    .tags{margin-top:12px}
+    .tag{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03);margin:6px 6px 0 0;font-size:12px;color:var(--muted)}
+
+    .aside{position:relative}
+    .card.small{padding:14px}
+    .small h3{margin:0 0 8px 0}
+    .seo{margin-top:16px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);padding:12px;border-radius:8px}
+
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    .faq{margin-top:14px}
+    details{background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;margin-top:8px}
+    .kbd{background:rgba(255,255,255,0.03);padding:4px 8px;border-radius:6px;font-family:monospace;font-size:12px}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "VideoObject",
+    "name": "YouTube Video S34KpOAgyTg",
+    "description": "Landing page for YouTube video with ID S34KpOAgyTg — watch, stream, and discover related playlist.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/S34KpOAgyTg/hqdefault.jpg",
+    "uploadDate": "2020-01-01",
+    "embedUrl": "https://www.youtube.com/embed/S34KpOAgyTg",
+    "contentUrl": "https://www.youtube.com/watch?v=S34KpOAgyTg",
+    "publisher": {"@type":"Organization","name":"YouTube"}
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="logo">YT</div>
+        <div>
+          <h1>Watch: YouTube Video (ID: S34KpOAgyTg)</h1>
+          <p class="lead">Fast access, embed, playlist guidance and SEO-friendly summary so users searching for this YouTube video can find it quickly.</p>
+        </div>
+      </header>
+
+      <div class="grid">
+        <main>
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/S34KpOAgyTg" title="YouTube video player" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+
+          <div class="meta">
+            <h2 style="margin:0 0 6px 0;">Video Overview & Quick Links</h2>
+            <p class="lead">Open the original on YouTube or watch the embedded player above. Use the buttons to go to the playlist or share the video.</p>
+            <div class="cta">
+              <a class="btn" href="https://www.youtube.com/watch?v=S34KpOAgyTg" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+              <a class="btn secondary" href="https://www.youtube.com/watch?v=S34KpOAgyTg&list=RDMMS34KpOAgyTg&start_radio=1" target="_blank" rel="noopener noreferrer">Open Playlist (Radio)</a>
+              <a class="btn secondary" href="#share" onclick="document.getElementById('share').scrollIntoView({behavior:'smooth'})">Share & Embed</a>
+            </div>
+
+            <div class="tags" aria-hidden>
+              <span class="tag">YouTube</span>
+              <span class="tag">Watch Online</span>
+              <span class="tag">S34KpOAgyTg</span>
+              <span class="tag">Playlist</span>
+              <span class="tag">Embed</span>
+            </div>
+
+            <div class="seo">
+              <strong>SEO / Search intent keywords:</strong>
+              <p style="margin:8px 0 0">watch S34KpOAgyTg, watch YouTube video S34KpOAgyTg, S34KpOAgyTg full video, watch video online, YouTube playlist S34KpOAgyTg, stream S34KpOAgyTg, embed S34KpOAgyTg</p>
+            </div>
+
+            <div class="faq">
+              <details>
+                <summary><strong>How to embed this video on your site</strong></summary>
+                <div style="margin-top:8px"><code class="kbd">&lt;iframe src=\"https://www.youtube.com/embed/S34KpOAgyTg\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;</code></div>
+              </details>
+              <details>
+                <summary><strong>Why this landing page helps SEO</strong></summary>
+                <div style="margin-top:8px">This page includes a clear title, meta description, schema markup (VideoObject), and relevant search-intent keywords—helping search engines index and surface the video to users searching for it.</div>
+              </details>
+            </div>
+
+            <section id="share" style="margin-top:12px">
+              <h3 style="margin:0 0 8px 0">Share & Embed</h3>
+              <p class="lead">Copy the YouTube URL or use the embed code above. For improved indexing, add a short transcript or time-stamped summary below the video.</p>
+              <textarea style="width:100%;height:88px;margin-top:8px;padding:10px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);color:#e6eef6">https://www.youtube.com/watch?v=S34KpOAgyTg</textarea>
+            </section>
+
+          </div>
+        </main>
+
+        <aside class="aside">
+          <div class="card small">
+            <h3>Playlist & Related</h3>
+            <p class="lead">This video belongs to a rolling radio/playlist. Use the playlist link to explore similar content and increase watch time.</p>
+            <a class="btn" href="https://www.youtube.com/watch?v=S34KpOAgyTg&list=RDMMS34KpOAgyTg&start_radio=1" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:10px">Open Playlist</a>
+          </div>
+
+          <div class="card small" style="margin-top:12px">
+            <h3>Optimize for Google Search</h3>
+            <ol style="margin:8px 0 0 18px;color:var(--muted)">
+              <li>Add a 100–300 word transcript or summary beneath the player.</li>
+              <li>Include time-stamped highlights for "search snippets".</li>
+              <li>Use schema (VideoObject) — already included in this page.</li>
+              <li>Link to the original YouTube and to related playlist entries.</li>
+            </ol>
+          </div>
+
+          <div class="card small" style="margin-top:12px">
+            <h3>Quick Keywords</h3>
+            <div style="margin-top:8px;color:var(--muted);font-size:13px">
+              <div class="tag">watch YouTube video</div>
+              <div class="tag">YouTube playlist</div>
+              <div class="tag">embed YouTube</div>
+              <div class="tag">video highlights</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <div>© YouTube Landing • SEO-friendly page for video ID <strong>S34KpOAgyTg</strong></div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
