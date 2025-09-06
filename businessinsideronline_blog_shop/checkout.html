@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Checkout — Business Insider Online</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">Business Insider Online</a>
+    <nav>
+      <a href="/blogs.html">Blogs</a>
+      <a href="/cart.html">Cart</a>
+      <a href="/checkout.html">Checkout</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <h1>Checkout</h1>
+  <p class="muted">Fill in your details. Payment methods supported: Cash on Delivery, Bank Transfer, Invoice.</p>
+  <div class="card">
+    <form name="checkout" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/order-success.html">
+      <input type="hidden" name="form-name" value="checkout">
+      <p style="display:none"><label>Don’t fill this out: <input name="bot-field"></label></p>
+      <input type="hidden" id="cart-data" name="cart">
+      <label>Full Name<input type="text" name="name" required></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Phone<input type="tel" name="phone"></label>
+      <label>Address<textarea name="address" required></textarea></label>
+      <label>Payment Method
+        <select name="payment" required>
+          <option value="cod">Cash on Delivery (COD)</option>
+          <option value="bank">Bank Transfer</option>
+          <option value="invoice">Invoice (Email)</option>
+        </select>
+      </label>
+      <label>Notes (optional)<textarea name="notes"></textarea></label>
+      <p class="muted">Total: <span id="total-amount">$0.00</span></p>
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+    <p class="muted">After placing the order you'll see it in your Netlify dashboard → Forms. Process orders manually and deliver content via email or file link.</p>
+  </div>
+</main>
+<footer class="site-footer"><div class="container center"><p>&copy; Business Insider Online</p></div></footer>
+<script src="assets/js/cart.js"></script>
+<script>
+// Fill cart hidden field and total amount before submit
+document.addEventListener('DOMContentLoaded', ()=>{
+  const cart = getCart();
+  document.getElementById('cart-data').value = JSON.stringify(cart);
+  const total = cart.reduce((s,i)=>s + (i.price||0), 0);
+  document.getElementById('total-amount').textContent = '$' + total.toFixed(2);
+});
+</script>
+</body>
+</html>
