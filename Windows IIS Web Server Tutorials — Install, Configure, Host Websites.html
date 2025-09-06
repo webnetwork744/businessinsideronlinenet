@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Windows IIS Web Server Tutorials — Install, Configure, Host Websites</title>
+  <meta name="description" content="Step-by-step tutorials for Windows IIS Web Server: install IIS, add websites, configure application pools, enable SSL HTTPS, deploy ASP.NET and PHP apps, troubleshoot IIS errors." />
+  <meta name="keywords" content="install IIS Windows, IIS web server tutorial, configure IIS, add website IIS, IIS application pools, enable SSL IIS, deploy ASP.NET IIS, deploy PHP IIS, troubleshoot IIS" />
+  <style>
+    body{margin:0;font-family:Segoe UI,Roboto,Arial,sans-serif;background:#f9fbfe;color:#0b2336}
+    .container{max-width:1100px;margin:auto;padding:28px}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    .logo{background:#0067b8;color:#fff;font-weight:700;font-size:22px;width:64px;height:64px;display:flex;align-items:center;justify-content:center;border-radius:14px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin-top:4px;color:#5c6b7a}
+    .grid{display:grid;grid-template-columns:1fr 300px;gap:22px}
+    .card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 4px 14px rgba(0,0,0,0.08);margin-bottom:18px}
+    h2{font-size:20px;margin:8px 0}
+    ol,ul{color:#5c6b7a;padding-left:20px}
+    .keywords{font-size:13px;color:#5c6b7a;margin-top:6px}
+    a{color:#0067b8;text-decoration:none}
+    nav a{display:block;padding:6px 0}
+    footer{text-align:center;font-size:13px;color:#5c6b7a;margin-top:28px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">IIS</div>
+      <div>
+        <h1>Windows IIS Web Server Tutorials</h1>
+        <p class="lead">Learn to install, configure, secure, and troubleshoot IIS for hosting websites and applications on Windows.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <article class="card">
+          <h2>1. Install IIS on Windows</h2>
+          <ol>
+            <li>Press <code>Win + R</code>, type <code>optionalfeatures</code> → Enter.</li>
+            <li>In <strong>Windows Features</strong>, check <strong>Internet Information Services</strong>.</li>
+            <li>Select <em>Web Management Tools</em> and <em>World Wide Web Services</em>.</li>
+            <li>Click OK, then open <code>http://localhost</code> to see IIS welcome page.</li>
+          </ol>
+          <p class="keywords">Keywords: install IIS Windows 10, install IIS Windows 11</p>
+        </article>
+
+        <article class="card">
+          <h2>2. IIS Manager Overview</h2>
+          <p>Open IIS Manager with <code>inetmgr</code>. Left panel shows sites and app pools, middle panel shows features, right panel gives actions (start, stop, restart).</p>
+          <p class="keywords">Keywords: IIS Manager tutorial, IIS configuration basics</p>
+        </article>
+
+        <article class="card">
+          <h2>3. Host a Website in IIS</h2>
+          <ol>
+            <li>In IIS Manager, right-click <strong>Sites</strong> → Add Website.</li>
+            <li>Enter site name, choose physical path (e.g., <code>C:\inetpub\wwwroot\mysite</code>).</li>
+            <li>Set binding: <strong>http</strong>, port 80.</li>
+            <li>Click OK → Test on <code>http://localhost</code>.</li>
+          </ol>
+          <p class="keywords">Keywords: add website IIS, host site IIS Windows</p>
+        </article>
+
+        <article class="card">
+          <h2>4. IIS Application Pools</h2>
+          <p>Application Pools isolate apps for stability and security. Each pool runs with its own worker process.</p>
+          <ul>
+            <li>Set .NET CLR version per site.</li>
+            <li>Recycle pools to refresh memory.</li>
+          </ul>
+          <p class="keywords">Keywords: IIS application pools explained, configure IIS app pool</p>
+        </article>
+
+        <article class="card">
+          <h2>5. Enable HTTPS (SSL Certificate)</h2>
+          <ol>
+            <li>Create a self-signed certificate in IIS or install a trusted SSL cert.</li>
+            <li>IIS Manager → Site → Bindings → Add HTTPS (port 443).</li>
+            <li>Select certificate → Save.</li>
+          </ol>
+          <p class="keywords">Keywords: enable SSL IIS, HTTPS IIS setup</p>
+        </article>
+
+        <article class="card">
+          <h2>6. Deploy ASP.NET Website</h2>
+          <ol>
+            <li>Publish project from Visual Studio to a folder.</li>
+            <li>Create IIS site → point to published folder.</li>
+            <li>Set App Pool to correct .NET CLR version.</li>
+          </ol>
+          <p class="keywords">Keywords: deploy ASP.NET IIS, host ASP.NET site IIS</p>
+        </article>
+
+        <article class="card">
+          <h2>7. Deploy PHP Website</h2>
+          <ol>
+            <li>Install PHP for Windows (PHP Manager for IIS).</li>
+            <li>Configure Handler Mappings in IIS for PHP.</li>
+            <li>Point IIS site to PHP files.</li>
+            <li>Test with <code>phpinfo.php</code>.</li>
+          </ol>
+          <p class="keywords">Keywords: deploy PHP IIS, run PHP on Windows IIS</p>
+        </article>
+
+        <article class="card">
+          <h2>8. Useful IIS Commands (PowerShell)</h2>
+          <ul>
+            <li>Restart IIS: <code>iisreset</code></li>
+            <li>Start IIS: <code>Start-Service W3SVC</code></li>
+            <li>Stop IIS: <code>Stop-Service W3SVC</code></li>
+          </ul>
+          <p class="keywords">Keywords: IIS PowerShell commands, restart IIS Windows</p>
+        </article>
+
+        <article class="card">
+          <h2>9. Troubleshooting IIS</h2>
+          <ul>
+            <li>Check ports if site won’t load (80/443).</li>
+            <li>Give folder permissions to <code>IUSR</code> or <code>IIS_IUSRS</code>.</li>
+            <li>Enable detailed errors for 500 issues.</li>
+          </ul>
+          <p class="keywords">Keywords: troubleshoot IIS, fix IIS errors</p>
+        </article>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Quick Navigation</h3>
+          <nav>
+            <a href="#">Install IIS</a>
+            <a href="#">IIS Manager</a>
+            <a href="#">Host a Website</a>
+            <a href="#">Application Pools</a>
+            <a href="#">Enable HTTPS</a>
+            <a href="#">Deploy ASP.NET</a>
+            <a href="#">Deploy PHP</a>
+            <a href="#">IIS Commands</a>
+            <a href="#">Troubleshooting</a>
+          </nav>
+        </div>
+
+        <div class="card">
+          <h3>Search Intent Keywords</h3>
+          <ul>
+            <li>Install IIS Windows 11</li>
+            <li>Host website IIS tutorial</li>
+            <li>Configure SSL in IIS</li>
+            <li>Deploy ASP.NET in IIS</li>
+            <li>Run PHP on IIS server</li>
+            <li>Troubleshoot IIS 500 error</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © 2025 Windows IIS Tutorials — Optimized for Google Search Intent (Install, Configure, Deploy, Troubleshoot)
+    </footer>
+  </div>
+</body>
+</html>
